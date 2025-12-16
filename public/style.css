@@ -52,7 +52,7 @@ body {
     color: var(--bs-primary);
 }
 
-.main-home, .main-about {
+.main-home, .main-about, .main-success, .main-no-token, .main-failure {
     margin-top: 63px;
 }
 
@@ -479,6 +479,22 @@ label:not(.form-check-label, .state-label, .age-label, .additional-info-label)::
     transform-origin: 0 0;
 }
 
+.hcaptcha-response-page {
+    height: 100vh;
+}
+
+.main-success, .main-no-token, .main-failure {
+    text-align: center;
+}
+
+.main-success h2, .main-no-token h2, .main-failure h2 {
+    color: var(--bs-primary);
+}
+
+.main-no-token a, .main-failure a {
+    color: var(--bs-tertiary);
+}
+
 
 @media screen and (min-width: 30rem) {      /* 480px */
     .lead {
@@ -493,7 +509,7 @@ label:not(.form-check-label, .state-label, .age-label, .additional-info-label)::
         object-fit: cover;
     }
 
-    .main-home {
+    .main-home, .main-success, .main-no-token, .main-failure {
         margin-top: 81px;
     }
 
