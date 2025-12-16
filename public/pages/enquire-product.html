@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pmonix</title>
+
+  <meta name="title" content="P-Monix Beauty Store — Luxury Wigs & Beauty Solutions">
+  <meta name="description"
+    content="Discover premium-quality wigs and beauty products and supplements from P-Monix. Elevate your look with luxury hair solutions made with elegance.">
+
+  <meta property="og:title" content="P-Monix Beauty Store — Luxury Wigs & Beauty Solutions">
+  <meta property="og:description"
+    content="Discover premium-quality wigs and beauty products and supplements from P-Monix. Elevate your look with luxury hair solutions made with elegance.">
+  <meta property="og:image" content="https://yourdomain.com/public/pmonix-beauty-store-banner2.png">
+  <meta property="og:url" content=""> <!-- ADD WEBSITE URL HERE-->
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="P-Monix Beauty Store — Luxury Wigs & Beauty Solutions">
+  <meta name="twitter:description"
+    content="Discover premium-quality wigs and beauty products and supplements from P-Monix. Elevate your look with luxury hair solutions made with elegance.">
+  <meta name="twitter:image" content="https://yourdomain.com/public/pmonix-beauty-store-banner2.png">
+  <!-- check here - https://developers.facebook.com/tools/debug/ -->
+  <!-- and check here - https://cards-dev.twitter.com/validator -->
+
+  <link rel="apple-touch-icon" sizes="180x180" href="../pmonix-icon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../pmonix-icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../pmonix-icon/favicon-16x16.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=TASA+Explorer:wght@400..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css">
+
+  <script defer src="../index.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="navbar navbar-expand-md fixed-top pb-0" aria-label="Light offcanvas navbar">
+
+      <div class="container-fluid nav-container align-items-center">
+        <a class="navbar-brand d-sm-none" href="/">
+          <img src="../pmonix-logo-without-text.png" alt="pmonix logo" width="45px">
+        </a>
+        <a class="navbar-brand d-none d-sm-block ms-2 pb-0" href="/">
+          <img src="../pmonix-logo.png" alt="pmonix logo with text" class="pb-4" width="100px">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarLight"
+          aria-controls="offcanvasNavbarLight" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarLight"
+          aria-labelledby="offcanvasNavbarLightLabel">
+          <div class="offcanvas-header border-bottom">
+            <div class="offcanvas-title d-flex align-items-center" id="offcanvasNavbarLightLabel">
+              <img src="../pmonix-logo-without-text.png" alt="pmonix logo" width="45px">
+              <h5 style="margin: 0;">Pmonix</h5>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item pb-md-4">
+                <a class="nav-link px-0" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-0" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-0 active" aria-current="page" href="/enquire-product">Enquire</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-0" target="_blank" href="https://www.instagram.com/pmonix_hairs/">Instagram</a>
+              </li>
+              <li>
+                <div class="google-translate" id="google_translate_element"></div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main class="main-enquire">
+
+    <div class="form-background">
+    </div>
+
+    <div class="form-container container px-4">
+
+      <form action="/enquiry-submit" method="POST">
+
+        <div class="name-email d-sm-flex">
+          <div class="mb-3 name">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control form-control-name" id="name" name="name" autocomplete="name"
+              aria-describedby="name-error" required />
+
+            <div id="name-error" class="error" aria-live="polite">
+              This field is required
+            </div>
+          </div>
+
+          <div class="mb-3 email">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" autocomplete="email"
+              aria-describedby="emailHelp" required>
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            <div id="email-error" class="error" aria-live="polite">
+              This field is required
+            </div>
+          </div>
+        </div>
+
+        <div class="country-state d-sm-flex">
+          <div class="mb-3 country">
+            <label for="country" class="form-label">Country</label>
+            <input type="text" class="form-control" id="country" name="country" autocomplete="country" required>
+            <div id="country-error" class="error" aria-live="polite">
+              This field is required
+            </div>
+          </div>
+
+          <div class="mb-3 state">
+            <label for="state" class="form-label state-label">State</label>
+            <input type="text" class="form-control" id="state" name="state">
+          </div>
+        </div>
+
+        <div class="phone-age d-sm-flex">
+          <div class="mb-3 phone">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" name="phone" autocomplete="tel"
+              aria-describedby="phoneHelp" required>
+            <div id="phoneHelp" class="form-text">Please type country code before number.</div>
+            <div id="phone-error" class="error" aria-live="polite">
+              This field is required
+            </div>
+          </div>
+
+          <div class="mb-3 age">
+            <label for="age" class="form-label age-label">Age</label>
+            <input type="number" class="form-control" id="age" , name="age">
+          </div>
+        </div>
+
+        <div class="gender d-sm-flex align-items-center mb-3">
+
+          <fieldset>
+            <legend class="form-label gender-label">Gender</legend>
+            <div class="gender-options d-sm-flex">
+
+              <div class="form-check gender-option">
+                <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                <label class="form-check-label" for="male">Male</label>
+              </div>
+              <div class="form-check gender-option">
+                <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                <label class="form-check-label" for="female">Female</label>
+              </div>
+              <div class="form-check gender-option">
+                <input class="form-check-input" type="radio" name="gender" id="other" value="other">
+                <label class="form-check-label" for="other">Other</label>
+              </div>
+            </div>
+          </fieldset>
+
+        </div>
+
+        <div class="products mb-4">
+          <legend class="form-label products-label mb-4">Products</legend>
+
+          <div class="products-list">
+
+            <div class="form-check product">
+              <!-- Image for the product -->
+              <input class="form-check-input" type="checkbox" name="wigs" id="wigs" value="wigs">
+              <label class="form-check-label" for="wigs">Wigs / Hair Products</label>
+            </div>
+
+            <div class="form-check product">
+              <input class="form-check-input" type="checkbox" name="supplements" id="supplements" value="supplements">
+              <label class="form-check-label" for="supplements">Supplements</label>
+            </div>
+
+            <div class="form-check product">
+              <input class="form-check-input" type="checkbox" name="skincare" id="skincare" value="skincare">
+              <label class="form-check-label" for="skincare">Skincare</label>
+            </div>
+
+            <div class="form-check product">
+              <input class="form-check-input" type="checkbox" name="otherProduct" id="other-product"
+                value="other-product">
+              <label class="form-check-label" for="other-product">Other Products</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="additional-info" class="form-label additional-info-label">Aditional Information</label>
+          <textarea class="form-control form-control-name" id="additional-info" name="additionalInfo"
+            aria-invalid="true" aria-describedby="additionalInfoHelp"></textarea>
+          <div id="additionalInfoHelp" class="form-text">Provide some additional information about what you're looking
+            to find.</div>
+
+        </div>
+
+        <!-- confirm faq with mum -->
+
+        <!-- when you get the pics, increase height on mobile, so it looks good on mobile -->
+        <div class="mb-3 form-check terms-box">
+          <input type="checkbox" class="form-check-input" id="terms" name="terms" required>
+          <label class="form-check-label terms-label" for="terms">I agree to the terms and conditions</label>
+        </div>
+        
+        <div class="hcaptcha-container">
+          <div class="h-captcha" data-sitekey="833cfacc-2aa0-4a98-80a2-b5581c0090ce"></div>
+        </div>
+
+        <div class="submit-button">
+          <button type="submit" class="btn btn-primary" id="submit-button">Submit</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+
+
+  <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+    }
+  </script>
+
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
