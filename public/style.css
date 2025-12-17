@@ -114,7 +114,9 @@ body {
 }
 
 .carousel {
-    height: 25rem;
+    max-width: 40rem;
+    margin: 0 auto;
+    height: 37.5rem;
 }
 
 .product-carousel {
@@ -127,12 +129,14 @@ body {
 }
 
 .carousel-item img {
-    width: 15rem;
+    width: 100%;
+    height: 35rem;
     margin: 0 auto;
+    object-fit: contain;
 }
 
 .carousel-control-next, .carousel-control-prev {
-    width: 20%;
+    width: 15%;
 }
 
 .next-arrow-bg, .prev-arrow-bg {
@@ -217,8 +221,9 @@ body {
     border-bottom: 2px solid var(--bs-primary);
 }
 
-.card svg {
+.card img {
     border-top: 2px solid var(--bs-primary);
+    height: 25rem;
 }
 
 .card-body {
@@ -500,6 +505,10 @@ label:not(.form-check-label, .state-label, .age-label, .additional-info-label)::
     .lead {
         font-size: 1.05rem;
     }
+
+    .carousel {
+        height: 38rem;
+    }
 }
 
 @media screen and (min-width: 36rem) {          /* 576px */
@@ -617,11 +626,11 @@ label:not(.form-check-label, .state-label, .age-label, .additional-info-label)::
     }
 
     .carousel-control-prev {
-        left: 80px;
+        left: 40px;
     }
     
     .carousel-control-next {
-        right: 80px
+        right: 40px
     }
 
     .get-product-btn {
