@@ -554,7 +554,7 @@ label:not(.form-check-label, .state-label, .age-label, .additional-info-label)::
 
     .social-media-links-cards {
         gap: 1rem;
-        max-width: 60rem;
+        max-width: 50rem;
         margin: 0 auto;
     }
 
