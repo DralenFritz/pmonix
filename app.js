@@ -52,6 +52,3 @@ try {
 } catch (error) {
   console.log(error);
 }
-
-// success, failure, and no token html
-// when pictures come remove pic file in the root folder
